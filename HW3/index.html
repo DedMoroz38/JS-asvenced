@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">E-shop</div>
+        <button class="btn-cart" type="button">Корзина</button>
+    </header>
+    <main>
+        <div class="products"></div>
+        <div class="basket">
+            <p3>Корзина</p3>
+        </div>
+    </main>
+
+
+    <script src="js/main.js"></script>
+    <script>
+        let basket_button = document.querySelector('.btn-cart');
+        let basket = document.querySelector('.basket');
+        let cheker = true;
+        basket_button.addEventListener('click', function () {
+            if (cheker) {
+                basket.style.animation = 'filter 0.7s both';
+                cheker = false
+            } else {
+                basket.style.animation = 'filter2 0.7s both';
+                cheker = true;
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>
